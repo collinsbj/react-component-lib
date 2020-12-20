@@ -1,0 +1,129 @@
+@import "../colors";
+
+$box-shadow-value-1: 5px 5px 10px;
+$box-shadow-value-2: -5px -5px 10px;
+
+.button {
+	background-color: $base-white;
+	border-radius: 20px;
+	box-shadow: $box-shadow-value-1 #cccccc, $box-shadow-value-2 #ffffff;
+	font-size: 32px;
+	line-height: 32px;
+	border-width: 0;
+	padding: 10px 20px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	font-weight: 600;
+
+	*:not(:first-child) {
+		margin-left: 10px;
+	}
+
+	&.icon {
+		border-radius: 50%;
+		padding: 10px;
+	}
+
+	&.concave {
+		background: linear-gradient(145deg, #d8d8d8, #ffffff);
+		box-shadow: $box-shadow-value-1 #cccccc,
+			$box-shadow-value-2 rgb(255, 255, 255);
+	}
+
+	&.convex {
+		background: linear-gradient(145deg, #ffffff, #d8d8d8);
+		box-shadow: $box-shadow-value-1 #cccccc, $box-shadow-value-2 #ffffff;
+	}
+
+	&.pressed {
+		box-shadow: inset $box-shadow-value-1 #cccccc,
+			inset $box-shadow-value-2 #ffffff;
+	}
+
+	&.blue {
+		background: $blue;
+		box-shadow: $box-shadow-value-1 $dark-blue,
+			$box-shadow-value-2 $light-blue;
+
+		&.concave {
+			background: linear-gradient(145deg, #3b78dc, #478eff);
+			box-shadow: $box-shadow-value-1 #3871cf, $box-shadow-value-2 #4c99ff;
+		}
+
+		&.convex {
+			background: linear-gradient(145deg, #478eff, #3b78dc);
+			box-shadow: $box-shadow-value-1 #3871cf, $box-shadow-value-2 #4c99ff;
+		}
+
+		&.pressed {
+			box-shadow: inset $box-shadow-value-1 #3871cf,
+				inset $box-shadow-value-2 #4c99ff;
+		}
+	}
+
+	&.red {
+		background: $red;
+		box-shadow: $box-shadow-value-1 $dark-red,
+			$box-shadow-value-2 $light-red;
+
+		&.concave {
+			background: linear-gradient(145deg, #c53d32, #ea493b);
+			box-shadow: $box-shadow-value-1 #ba3a2f, $box-shadow-value-2 #fc4e3f;
+		}
+
+		&.convex {
+			background: linear-gradient(145deg, #ea493b, #c53d32);
+			box-shadow: $box-shadow-value-1 #ba3a2f, $box-shadow-value-2 #fc4e3f;
+		}
+
+		&.pressed {
+			box-shadow: inset $box-shadow-value-1 #ba3a2f,
+				inset $box-shadow-value-2 #fc4e3f;
+		}
+	}
+
+	&.yellow {
+		background: $yellow;
+		box-shadow: $box-shadow-value-1 $dark-yellow,
+			$box-shadow-value-2 $light-yellow;
+
+		&.concave {
+			background: linear-gradient(145deg, #dca200, #ffc100);
+			box-shadow: $box-shadow-value-1 #cf9900, $box-shadow-value-2 #ffcf00;
+		}
+
+		&.convex {
+			background: linear-gradient(145deg, #ffc100, #dca200);
+			box-shadow: $box-shadow-value-1 #cf9900, $box-shadow-value-2 #ffcf00;
+		}
+
+		&.pressed {
+			box-shadow: inset $box-shadow-value-1 #cf9900,
+				inset $box-shadow-value-2 #ffcf00;
+		}
+	}
+
+	&.green {
+		background: $green;
+		box-shadow: $box-shadow-value-1 $dark-green,
+			$box-shadow-value-2 $light-green;
+
+		&.concave {
+			background: linear-gradient(145deg, #0e8d4f, #10a85e);
+			box-shadow: $box-shadow-value-1 #0d854b, $box-shadow-value-2 #11b565;
+		}
+
+		&.convex {
+			background: linear-gradient(145deg, #10a85e, #0e8d4f);
+			box-shadow: $box-shadow-value-1 #0d854b, $box-shadow-value-2 #11b565;
+		}
+
+		&.pressed {
+			box-shadow: inset $box-shadow-value-1 #0d854b,
+				inset $box-shadow-value-2 #11b565;
+		}
+	}
+}
